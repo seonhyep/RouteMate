@@ -6,6 +6,7 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -26,6 +27,8 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -267,10 +270,12 @@ private fun V2Header() {
         Column(Modifier.fillMaxSize().padding(start = 20.dp, end = 20.dp, top = 18.dp)) {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Box(
-                        modifier = Modifier.size(34.dp).clip(RoundedCornerShape(11.dp)).background(V2Navy),
-                        contentAlignment = Alignment.Center
-                    ) { Icon(Icons.Default.AltRoute, null, tint = Color.White, modifier = Modifier.size(20.dp)) }
+                    Image(
+                        painter = painterResource(id = R.drawable.routemate_logo),
+                        contentDescription = "RouteMate 로고",
+                        modifier = Modifier.size(40.dp).clip(RoundedCornerShape(60.dp)),
+                        contentScale = ContentScale.Fit
+                    )
                     Row {
                         Text("Route", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = V2Navy)
                         Text("Mate", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = V2Blue)
