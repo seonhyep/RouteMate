@@ -16,7 +16,7 @@
 |---|---|
 | 앱 이름 | RouteMate (루트메이트) |
 | 한 줄 소개 | 운전자의 할 일을 기억하고 데모 이동 상황에 따라 실행 기회를 추천하며 완료 여부를 관리하는 차량 생활 업무 실행 에이전트 |
-| APK | [`apk/팀명_RouteMate_release.apk`](apk/팀명_RouteMate_release.apk) **← 제출 전 `팀명`을 실제 팀명으로 변경하고 이 링크도 수정** |
+| APK | [`apk/누리움_RouteMate_release.apk`](apk/누리움_RouteMate_release.apk) |
 | 빌드 유형 | Android Signed Release APK (`release`) |
 | 패키지 ID | `com.routemate.app` |
 | 버전 | `0.1.0` (`versionCode 1`) |
